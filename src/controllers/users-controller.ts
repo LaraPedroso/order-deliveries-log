@@ -29,7 +29,7 @@ class UsersController {
                 data: { name, email, password: hashedPassword },
             });
 
-            // password não existem dentro de userWithoutPassword, retorna todo restante, mas sem a senha (mais seguro).
+            // password não existem dentro de userWithoutPassword, retorna todo restante, mas sem a senha (+ seguro).
             const { password: _, ...userWithoutPassword } = user;
 
             return response.status(201).json(userWithoutPassword);
