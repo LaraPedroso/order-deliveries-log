@@ -7,7 +7,11 @@ const deliveriesRoutes = Router();
 const deliveriesController = new DeliveriesController();
 
 // somente vendedor
-deliveriesRoutes.use(ensureAuthenticated, verifyUserAuthorization(["sale"]));
+deliveriesRoutes.use(
+    ensureAuthenticated,
+    verifyUserAuthorization(["sale", "customer"])
+);
+deliveriesRoutes.get("/", deliveriesController.index);
 deliveriesRoutes.post("/", deliveriesController.create);
 
 export { deliveriesRoutes };
