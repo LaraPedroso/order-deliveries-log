@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from "express";
+import { prisma } from "@/database/prisma";
 import z from "zod";
 import { compare } from "bcrypt";
-import { prisma } from "@/database/prisma";
 import { AppError } from "@/utils/AppError";
 import { authConfig } from "@/configs/auth";
 import { sign } from "jsonwebtoken";
