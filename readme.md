@@ -14,15 +14,15 @@ Liste o que é necessário para instalar o software e como instalá-lo:
 # Exemplo para Node.js
 node -v
 npm -v
-
-# Clone o repositório
+```
+## Clone o repositório
 git clone https://github.com/seu-usuario/nome-do-projeto.git
 
-# Acesse o diretório
+## Acesse o diretório
 cd nome-do-projeto
 
-# Instale as dependências
+## Instale as dependências
 npm install
 
-# Rode o projeto
+##  Rode o projeto
 npm start
